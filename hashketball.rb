@@ -1,50 +1,50 @@
 def game_hash
+  
     {
       :home => {
                 :team_name => "Brooklyn Nets",
                 :colors => ["Black", "White"],
-                :players => {
-                  "Alan Anderson" => {
-                    :number =>  0 ,
-                    :shoe =>  16 ,
-                    :points =>  22 ,
-                    :rebounds =>  12 ,
-                    :assists =>  12 ,
-                    :steals =>  3 ,
-                    :blocks =>  1 ,
-                    :slam_dunks =>  1
-                    },
-                  "Reggie Evans" => {
-                    :number =>  30 ,
-                    :shoe => 14 ,
-                    :points => 12  ,
-                    :rebounds =>  12 ,
-                    :assists => 12  ,
-                    :steals => 12  ,
-                    :blocks =>  12 ,
-                    :slam_dunks =>  7
-                    },
-                  "Brook Lopez" => {
-                    :number => 11  ,
-                    :shoe =>  17 ,
-                    :points =>  17 ,
-                    :rebounds => 19  ,
-                    :assists =>  10 ,
-                    :steals => 3  ,
-                    :blocks => 1  ,
-                    :slam_dunks =>  15
-                    },
-                  "Mason Plumlee" => {
-                    :number =>  1 ,
-                    :shoe =>  19 ,
-                    :points =>  26 ,
-                    :rebounds =>  12 ,
-                    :assists =>  6 ,
-                    :steals =>  3 ,
-                    :blocks =>  8 ,
-                    :slam_dunks => 5
-                    },
-                  "Jason Terry" => {
+                :players => { "Alan Anderson" => {
+                                :number =>  0 ,
+                                :shoe =>  16 ,
+                                :points =>  22 ,
+                                :rebounds =>  12 ,
+                                :assists =>  12 ,
+                                :steals =>  3 ,
+                                :blocks =>  1 ,
+                                :slam_dunks =>  1
+                                },
+                              "Reggie Evans" => {
+                                :number =>  30 ,
+                                :shoe => 14 ,
+                                :points => 12  ,
+                                :rebounds =>  12 ,
+                                :assists => 12  ,
+                                :steals => 12  ,
+                                :blocks =>  12 ,
+                                :slam_dunks =>  7
+                                },
+                              "Brook Lopez" => {
+                                :number => 11  ,
+                                :shoe =>  17 ,
+                                :points =>  17 ,
+                                :rebounds => 19  ,
+                                :assists =>  10 ,
+                                :steals => 3  ,
+                                :blocks => 1  ,
+                                :slam_dunks =>  15
+                                },
+                              "Mason Plumlee" => {
+                                :number =>  1 ,
+                                :shoe =>  19 ,
+                                :points =>  26 ,
+                                :rebounds =>  12 ,
+                                :assists =>  6 ,
+                                :steals =>  3 ,
+                                :blocks =>  8 ,
+                                :slam_dunks => 5
+                                },
+                              "Jason Terry" => {
                     :number =>  31 ,
                     :shoe =>  15 ,
                     :points =>  19 ,
@@ -117,8 +117,18 @@ def game_hash
 
 end
 
-def num_points_scored
-
+def num_points_scored(player_name)
+  game_hash.each do |location,team_data|
+    team_data.each do |attribute, data|
+      data.do |data_item|
+        if data_item == player_name
+          return :points
+        else 
+          return "NO Ponts!!!"
+        end
+      end
+    end  
+  end  
 end
 
 
@@ -138,16 +148,56 @@ end
 
 
 def shoe_size
+  game_hash.each do |location,team_data|
+    team_data.each do |attribute, data|
+      data.do |data_item|
+        
+
+      end
+    end  
+  end 
 end
 
 def team_colors
+  game_hash.each do |location,team_data|
+    team_data.each do |attribute, data|
+      data.do |data_item|
+        
+
+      end
+    end  
+  end 
 end
 
 def team_names
+  game_hash.each do |location,team_data|
+    team_data.each do |attribute, data|
+      data.do |data_item|
+        
+
+      end
+    end  
+  end 
 end
 
 def player_numbers
+  game_hash.each do |location,team_data|
+    team_data.each do |attribute, data|
+      data.do |data_item|
+        
+
+      end
+    end  
+  end 
 end
 
 def player_stats
+  game_hash.each do |location,team_data|
+    team_data.each do |attribute, data|
+      data.do |data_item|
+        
+
+      end
+    end  
+  end 
 end
