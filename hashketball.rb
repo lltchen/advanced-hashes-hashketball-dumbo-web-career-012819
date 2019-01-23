@@ -1,5 +1,5 @@
 def game_hash
-  
+
     {
       :home => {
                 :team_name => "Brooklyn Nets",
@@ -123,12 +123,12 @@ def num_points_scored(player_name)
       data.do |data_item|
         if data_item == player_name
           return :points
-        else 
+        else
           return "NO Ponts!!!"
         end
       end
-    end  
-  end  
+    end
+  end
 end
 
 
@@ -151,53 +151,53 @@ def shoe_size
   game_hash.each do |location,team_data|
     team_data.each do |attribute, data|
       data.do |data_item|
-        
+
 
       end
-    end  
-  end 
+    end
+  end
 end
 
 def team_colors
   game_hash.each do |location,team_data|
     team_data.each do |attribute, data|
       data.do |data_item|
-        
+
 
       end
-    end  
-  end 
+    end
+  end
 end
 
 def team_names
   game_hash.each do |location,team_data|
     team_data.each do |attribute, data|
       data.do |data_item|
-        
+
 
       end
-    end  
-  end 
+    end
+  end
 end
 
 def player_numbers
   game_hash.each do |location,team_data|
     team_data.each do |attribute, data|
       data.do |data_item|
-        
+
 
       end
-    end  
-  end 
+    end
+  end
 end
 
 def player_stats
   game_hash.each do |location,team_data|
     team_data.each do |attribute, data|
       data.do |data_item|
-        
+
 
       end
-    end  
-  end 
+    end
+  end
 end
